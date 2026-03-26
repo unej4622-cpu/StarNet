@@ -8,3 +8,14 @@ starnet-core = { path = "../starnet-core" }
 starnet-capture = { path = "../starnet-capture" }
 thiserror = { workspace = true }
 serde = { workspace = true }
+log = "0.4"
+
+[target.'cfg(target_os = "windows")'.dependencies]
+windows = { version = "0.58", features = [
+    "Win32_Media_MediaFoundation",
+    "Win32_System_Com",
+    "Win32_Foundation",
+    "Win32_Graphics_Direct3D11",
+    "Win32_Graphics_Dxgi",
+    "Win32_Graphics_Direct3D",
+] }

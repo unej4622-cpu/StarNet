@@ -792,10 +792,12 @@ dependencies = [
 name = "starnet-encode"
 version = "0.1.0"
 dependencies = [
+ "log",
  "serde",
  "starnet-capture",
  "starnet-core",
  "thiserror",
+ "windows",
 ]
 
 [[package]]
