@@ -1,0 +1,17 @@
+[package]
+name = "starnet-input"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+starnet-core = { path = "../starnet-core" }
+thiserror = { workspace = true }
+async-trait = { workspace = true }
+tokio = { workspace = true }
+
+[target.'cfg(target_os = "windows")'.dependencies]
+windows = { version = "0.58", features = [
+    "Win32_UI_Input",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_Foundation",
+] }

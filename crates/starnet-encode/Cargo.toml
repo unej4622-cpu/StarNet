@@ -1,0 +1,10 @@
+[package]
+name = "starnet-encode"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+starnet-core = { path = "../starnet-core" }
+starnet-capture = { path = "../starnet-capture" }
+thiserror = { workspace = true }
+serde = { workspace = true }

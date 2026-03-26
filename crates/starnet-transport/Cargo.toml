@@ -1,0 +1,13 @@
+[package]
+name = "starnet-transport"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+starnet-core = { path = "../starnet-core" }
+starnet-encode = { path = "../starnet-encode" }
+thiserror = { workspace = true }
+async-trait = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
