@@ -829,12 +829,15 @@ name = "starnet-transport"
 version = "0.1.0"
 dependencies = [
  "async-trait",
+ "futures-util",
+ "log",
  "serde",
  "serde_json",
  "starnet-core",
  "starnet-encode",
  "thiserror",
  "tokio",
+ "tokio-tungstenite",
 ]
 
 [[package]]

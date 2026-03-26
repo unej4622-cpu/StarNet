@@ -8,6 +8,9 @@ starnet-core = { path = "../starnet-core" }
 starnet-encode = { path = "../starnet-encode" }
 thiserror = { workspace = true }
 async-trait = { workspace = true }
-tokio = { workspace = true }
+tokio = { workspace = true, features = ["full"] }
 serde = { workspace = true }
 serde_json = { workspace = true }
+futures-util = "0.3"
+tokio-tungstenite = "0.28"
+log = "0.4"
